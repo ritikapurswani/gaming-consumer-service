@@ -1,0 +1,110 @@
+2024-05-07 20:21:36 [main] INFO  c.e.g.GamingServiceApplication - Starting GamingServiceApplication using Java 1.8.0_202 on 197NODMB29285 with PID 72018 (/Users/ritikapurswani/Downloads/gaming-service-consumer/target/classes started by ritikapurswani in /Users/ritikapurswani/Downloads/gaming-service-consumer)
+2024-05-07 20:21:36 [main] INFO  c.e.g.GamingServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-07 20:21:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-07 20:21:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-07 20:21:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2024-05-07 20:21:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-05-07 20:21:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-07 20:21:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-07 20:21:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-05-07 20:21:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-07 20:21:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2431 ms
+2024-05-07 20:21:41 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-score-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = score-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-05-07 20:21:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.0.0
+2024-05-07 20:21:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 8cb0a5e9d3441962
+2024-05-07 20:21:41 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1715093501163
+2024-05-07 20:21:41 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Subscribed to topic(s): gaming-service-topic
+2024-05-07 20:21:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-05-07 20:21:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-05-07 20:21:41 [main] INFO  c.e.g.GamingServiceApplication - Started GamingServiceApplication in 5.534 seconds (JVM running for 6.428)
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Cluster ID: HBKW_YKGToeswrAvpRob0A
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Discovered group coordinator 192.168.29.219:9092 (id: 2147483647 rack: null)
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] (Re-)joining group
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Request joining group due to: need to re-join with the given member-id
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] (Re-)joining group
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Successfully joined group with generation Generation{generationId=12, memberId='consumer-score-consumer-group-1-e08778e6-f789-420c-97f0-9f08d4277772', protocol='range'}
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Finished assignment for group at generation 12: {consumer-score-consumer-group-1-e08778e6-f789-420c-97f0-9f08d4277772=Assignment(partitions=[gaming-service-topic-0, gaming-service-topic-1])}
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Successfully synced group in generation Generation{generationId=12, memberId='consumer-score-consumer-group-1-e08778e6-f789-420c-97f0-9f08d4277772', protocol='range'}
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Notifying assignor about the new Assignment(partitions=[gaming-service-topic-0, gaming-service-topic-1])
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Adding newly assigned partitions: gaming-service-topic-0, gaming-service-topic-1
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Setting offset for partition gaming-service-topic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.29.219:9092 (id: 0 rack: null)], epoch=0}}
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-score-consumer-group-1, groupId=score-consumer-group] Setting offset for partition gaming-service-topic-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.29.219:9092 (id: 0 rack: null)], epoch=0}}
+2024-05-07 20:21:41 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - score-consumer-group: partitions assigned: [gaming-service-topic-0, gaming-service-topic-1]
